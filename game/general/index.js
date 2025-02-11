@@ -16,15 +16,15 @@
 //
 // const computer_action = computer_selections[computer_random];
 //
-// let player_selection_index = computer_random + 1;
-// if (player_selection_index >= selections_length) player_selection_index = 0;
+// let player_won_index = computer_random + 1;
+// if (player_won_index >= selections_length) player_won_index = 0;
 //
 // console.log('第一届石头、剪刀与布游戏大赛正式开始!');
 // console.log(`玩家: ${player_action}, 电脑: ${computer_action}`);
 //
 // if (player_action === computer_action) {
 //     console.log('平局!');
-// } else if (player_action === computer_selections[player_selection_index]) {
+// } else if (player_action === computer_selections[player_won_index]) {
 //     console.log('玩家赢!');
 // } else {
 //     console.log('电脑赢!');
