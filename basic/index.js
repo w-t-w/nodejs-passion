@@ -8,5 +8,5 @@ require('./built-in');
 require('./io');
 // callback 回调函数
 require('./callback');
-// 事件循环
+// 事件循环机制
 require('./loop');
