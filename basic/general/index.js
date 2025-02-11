@@ -37,4 +37,4 @@
 // console.log(process.memoryUsage);
 // console.log(process.resourceUsage);
 
-console.log('NodeJS 《第一课: 基础语法-内置对象与函数》部分已热情的学习研究完毕!');
+console.log('NodeJS 《第一课: 基础语法-内置对象与函数》部分已热情的学习研究完毕!如需重试,将以上注释代码解开即可!');

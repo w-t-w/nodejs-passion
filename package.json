@@ -19,6 +19,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "basic": "nodemon ./basic/index.js"
+    "basic": "nodemon ./basic/index.js",
+    "game": "nodemon ./game/index.js"
   }
 }
