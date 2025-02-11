@@ -4,3 +4,5 @@ require('./general');
 require('./commonjs');
 // 内置模块
 require('./built-in');
+// IO (阻塞性 IO / 非阻塞性 IO)
+require('./io');

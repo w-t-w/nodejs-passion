@@ -21,5 +21,8 @@
   "scripts": {
     "basic": "nodemon ./basic/index.js",
     "game": "nodemon ./game/index.js"
+  },
+  "dependencies": {
+    "glob": "^7.2.3"
   }
 }
