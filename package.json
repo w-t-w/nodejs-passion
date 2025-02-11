@@ -20,7 +20,8 @@
   "main": "index.js",
   "scripts": {
     "basic": "nodemon ./basic/index.js",
-    "game": "nodemon ./game/index.js"
+    "game": "nodemon ./game/index.js",
+    "network": "nodemon ./network/index.js"
   },
   "dependencies": {
     "glob": "^7.2.3"
