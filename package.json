@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-passion",
+  "version": "1.0.0",
+  "description": "nodejs passion",
+  "keywords": [
+    "nodejs",
+    "passion"
+  ],
+  "homepage": "https://github.com/w-t-w/nodejs-passion#readme",
+  "bugs": {
+    "url": "https://github.com/w-t-w/nodejs-passion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w-t-w/nodejs-passion.git"
+  },
+  "license": "MIT",
+  "author": "black_myth_wukong",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "basic": "nodemon ./basic/index.js"
+  }
+}
