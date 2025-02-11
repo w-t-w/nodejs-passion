@@ -9,4 +9,4 @@
 // // console.timeEnd('nonblock');
 // console.log(101 + 108);
 
-console.log('NodeJS 【第六课: 非阻塞性 IO】部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第六课: 非阻塞性 IO》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');

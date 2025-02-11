@@ -15,4 +15,4 @@
 //     console.error(`cry!${err}`);
 // }
 
-console.log(`NodeJS 【第七课: 简易的 callback 回调函数】部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!`);
+console.log(`NodeJS 《第七课: 简易的 callback 回调函数》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!`);
