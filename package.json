@@ -21,7 +21,8 @@
   "scripts": {
     "basic": "nodemon ./basic/index.js",
     "game": "nodemon ./game/index.js",
-    "network": "nodemon ./network/index.js"
+    "network": "nodemon ./network/index.js",
+    "project": "nodemon ./project/index.js"
   },
   "dependencies": {
     "express": "^4.21.2",
