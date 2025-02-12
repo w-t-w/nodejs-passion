@@ -30,4 +30,4 @@
 //     console.log(`The server is running at http://localhost:${PORT}!`);
 // });
 
-console.log('NodeJS 《第十四课: 异步事件同步调用使用 commonjs 模块化导入导出规范,koa 网页程序中直接使用石头、剪刀与布游戏》已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第十四课: 异步事件同步调用使用 commonjs 模块化导入导出规范,koa 网页程序中直接使用石头、剪刀与布游戏》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');

@@ -38,4 +38,4 @@
 // const decode_object = schema.Black_Myth_WuKong.decode(encode_schema);
 // console.log(decode_object);
 
-console.log('NodeJS 《第十五课: Buffer protocol-buffers 使用》已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第十五课: Buffer protocol-buffers 使用》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');

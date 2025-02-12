@@ -44,4 +44,4 @@
 //     console.log(`The client page is running at http://localhost:${PORT}!`);
 // });
 
-console.log('NodeJS 《第十八课: 极客时间 detail 课程详情页》已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第十八课: 极客时间 detail 课程详情页》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');

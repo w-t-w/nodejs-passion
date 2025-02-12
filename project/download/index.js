@@ -30,4 +30,4 @@
 //     console.log(`The server is running at http://localhost:${PORT}!`);
 // });
 
-console.log(`NodeJS 《第十七课: 极客时间 download 下载页》已热情的学习研究完毕!如需重试,将以上代码注释解开即可!`);
+console.log(`NodeJS 《第十七课: 极客时间 download 下载页》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!`);

@@ -16,3 +16,5 @@ require('./promise');
 require('./async-await');
 // Buffer protocol-buffers 使用
 require('./buffer');
+// GraphQL API 接口规范化的查询方式(也可以说是查询语言)
+require('./graphql');
