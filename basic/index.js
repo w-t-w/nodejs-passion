@@ -18,3 +18,5 @@ require('./async-await');
 require('./buffer');
 // GraphQL API 接口规范化的查询方式(也可以说是查询语言)
 require('./graphql');
+// ES6 vm 模板引擎
+require('./template');
