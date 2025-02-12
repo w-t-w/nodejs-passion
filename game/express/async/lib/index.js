@@ -2,7 +2,7 @@ module.exports = (player_action) => {
     const computer_selections = ['scissor', 'rock', 'paper'];
 
     if (!computer_selections.includes(player_action)) {
-        console.error('请输入准确的石头、剪刀与布手势!【scissor or rock or paper】');
+        console.error('请输入准确的石头、剪刀与布游戏手势!【scissor or rock or paper】');
         process.exit(1);
     }
 

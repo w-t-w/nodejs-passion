@@ -17,7 +17,6 @@ module.exports = (player_action) => {
 
     console.log('第一届石头、剪刀与布游戏大赛正式开始!');
     console.log(`玩家: ${player_action}, 电脑: ${computer_action}`);
-
     if (player_action === computer_action) {
         console.log('平局!');
         return 0;

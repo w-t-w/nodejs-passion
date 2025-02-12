@@ -15,7 +15,7 @@
 //
 //     if (result === player_won_code) player_won_count++;
 //
-//     if (player_won_count === player_won_sum) {
+//     if (player_won_count >= player_won_sum) {
 //         console.error('你太厉害了!我不跟你玩儿了!');
 //         process.exit(1);
 //     }

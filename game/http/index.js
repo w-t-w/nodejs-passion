@@ -35,7 +35,7 @@
 //     if (pathname === '/game') {
 //         const {action} = querystring.parse(query);
 //
-//         if (player_won_count === player_won_sum || player_same_count === player_same_sum) {
+//         if (player_won_count >= player_won_sum || player_same_count === player_same_sum) {
 //             response.writeHead(500);
 //             response.end('你太厉害了!我不跟你玩儿了!');
 //             return false;

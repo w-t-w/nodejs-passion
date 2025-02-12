@@ -24,6 +24,10 @@
     "network": "nodemon ./network/index.js"
   },
   "dependencies": {
-    "glob": "^7.2.3"
+    "express": "^4.21.2",
+    "glob": "^7.2.3",
+    "koa": "^2.15.4",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0"
   }
 }
