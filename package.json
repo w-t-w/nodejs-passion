@@ -23,7 +23,10 @@
     "game": "nodemon ./game/index.js",
     "network": "nodemon ./network/index.js",
     "project": "nodemon ./project/index.js",
-    "project-list-server": "sh ./project/list/tmp/prod.sh"
+    "project-list-server": "sh ./project/list/tmp/prod.sh",
+    "performance": "nodemon ./performance/index.js",
+    "performance-profile": "node --prof ./performance/index.js",
+    "performance-inspect": "node --inspect-brk ./performance/index.js"
   },
   "dependencies": {
     "easy_sock": "^0.4.1",
