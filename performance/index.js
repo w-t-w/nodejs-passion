@@ -4,3 +4,5 @@ require('./tools');
 require('./javascript');
 // 性能优化 - 内存分配策略
 require('./memory');
+// 性能优化 - 多进程(子进程)配置
+require('./child-process');
