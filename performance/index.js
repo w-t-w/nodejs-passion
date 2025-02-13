@@ -6,3 +6,5 @@ require('./javascript');
 require('./memory');
 // 性能优化 - 多进程(子进程)配置
 require('./child-process');
+// 性能优化 - 多进程 cluster 集群配置
+require('./cluster');
