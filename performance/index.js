@@ -8,3 +8,5 @@ require('./memory');
 require('./child-process');
 // 性能优化 - 多进程 cluster 集群配置
 require('./cluster');
+// 性能优化 - 进程的守护与管理
+require('./guard');
