@@ -29,7 +29,8 @@
     "performance-inspect": "node --inspect-brk ./performance/index.js",
     "koaless": "nodemon ./koaless/index.js",
     "koaless-build": "node ./koaless/workspace/build/index.js",
-    "koaless-server": "node ./koaless/backend/index.js"
+    "koaless-server": "node ./koaless/backend/index.js",
+    "algorithm": "nodemon ./algorithm/index.js"
   },
   "dependencies": {
     "easy_sock": "^0.4.1",
