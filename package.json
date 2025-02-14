@@ -26,7 +26,10 @@
     "project-list-server": "sh ./project/list/tmp/prod.sh",
     "performance": "nodemon ./performance/index.js",
     "performance-profile": "node --prof ./performance/index.js",
-    "performance-inspect": "node --inspect-brk ./performance/index.js"
+    "performance-inspect": "node --inspect-brk ./performance/index.js",
+    "koaless": "nodemon ./koaless/index.js",
+    "koaless-build": "node ./koaless/workspace/build/index.js",
+    "koaless-server": "node ./koaless/backend/index.js"
   },
   "dependencies": {
     "easy_sock": "^0.4.1",
@@ -39,7 +42,8 @@
     "koa-static": "^5.0.0",
     "protocol-buffers": "^5.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
@@ -48,8 +52,10 @@
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1",
     "core-js": "^3.40.0",
+    "memory-fs": "^0.5.0",
+    "mkdirp": "^3.0.1",
     "text-loader": "^0.0.1",
-    "webpack": "~5.97.1",
-    "webpack-cli": "~6.0.1"
+    "webpack": "~4.47.0",
+    "webpack-cli": "~5.1.4"
   }
 }
