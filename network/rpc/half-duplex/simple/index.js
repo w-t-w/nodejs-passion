@@ -5,7 +5,7 @@
 //
 // const PACKAGE_BODY_LENGTH = 4;
 //
-// const lessonIds = [
+// const lesson_ids = [
 //         '136797',
 //         '136798',
 //         '136799',
@@ -26,7 +26,7 @@
 //         '146569',
 //         '146582'
 //     ],
-//     lessonIds_length = lessonIds.length;
+//     lesson_ids_length = lesson_ids.length;
 //
 // let index = 0,
 //     id = null;
@@ -39,8 +39,8 @@
 //     keepAlive: true
 // });
 //
-// index = Math.floor(Math.random() * lessonIds_length);
-// id = lessonIds[index];
+// index = Math.floor(Math.random() * lesson_ids_length);
+// id = lesson_ids[index];
 //
 // const encode = (id) => {
 //     const body = Buffer.alloc(PACKAGE_BODY_LENGTH);
@@ -53,8 +53,8 @@
 // socket.on('data', buffer => {
 //     const lesson = buffer.toString().trim();
 //     console.log(`课程 ID 为 ${id} 所对应的课程名称为 ${lesson}`);
-//     index = Math.floor(Math.random() * lessonIds_length);
-//     id = lessonIds[index];
+//     index = Math.floor(Math.random() * lesson_ids_length);
+//     id = lesson_ids[index];
 //     socket.write(encode(id));
 // });
 

@@ -2,7 +2,7 @@
 // const fs = require('fs');
 // const Koa = require('koa');
 // const KoaMount = require('koa-mount');
-// const gameKoa = require('./module');
+// const game_koa = require('./module');
 //
 // const PORT = 3000;
 //
@@ -17,7 +17,7 @@
 //     return false;
 // }));
 //
-// koa.use(KoaMount('/game', gameKoa));
+// koa.use(KoaMount('/game', game_koa));
 //
 // koa.use(KoaMount('/', ctx => {
 //     const {response} = ctx;

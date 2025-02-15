@@ -8,13 +8,13 @@
 //
 // const source = '{ hello }'
 //
-// const rootValue = {
+// const root_value = {
 //     hello() {
 //         return 'Hello GeekBang!Black Myth WuKong!';
 //     }
 // };
 //
-// graphql({schema, source, rootValue}).then(result => {
+// graphql({schema, source, rootValue: root_value}).then(result => {
 //     const {errors, data} = result;
 //     if (errors && errors.length) return console.error(errors);
 //     console.log(data);

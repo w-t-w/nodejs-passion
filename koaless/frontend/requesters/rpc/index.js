@@ -8,7 +8,7 @@ let socket = null;
 
 const rpc_requester = {
     compile: config => {
-        const {ip, port, timeout, protobufFile, requestStruct, responseStruct} = config;
+        const {ip, port, timeout, protobuf_file, request_struct, response_struct} = config;
 
         socket = new Easy_Socket({
             ip,
@@ -17,14 +17,14 @@ const rpc_requester = {
             keepAlive: true,
         });
 
-        const schema = protobuf(protobufFile, 'utf-8'),
-            requestSchema = schema[requestStruct],
-            responseSchema = schema[responseStruct];
+        const schema = protobuf(protobuf_file, 'utf-8'),
+            request_schema = schema[request_struct],
+            response_schema = schema[response_struct];
 
         socket.encode = (data, seq) => {
             const header = Buffer.alloc(PACKAGE_HEADER_LENGTH);
             header.writeInt32BE(seq);
-            const body = requestSchema.encode(data);
+            const body = request_schema.encode(data);
             const body_length = body.length;
             header.writeInt32BE(body_length, PACKAGE_SEQ_LENGTH);
             return Buffer.concat([header, body]);
@@ -33,7 +33,7 @@ const rpc_requester = {
         socket.decode = buffer => {
             const seq = buffer.readInt32BE();
             const body = buffer.slice(PACKAGE_HEADER_LENGTH);
-            const result = responseSchema.decode(body);
+            const result = response_schema.decode(body);
             return {
                 result,
                 seq,

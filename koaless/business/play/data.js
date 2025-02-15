@@ -101,9 +101,9 @@ const config = {
         ip: '127.0.0.1',
         port: 4000,
         timeout: 6666,
-        protobufFile: __webpack_require__(/*! ../proto/columns.proto */ "./koaless/workspace/play/source/proto/columns.proto"),
-        requestStruct: 'PlayRequest',
-        responseStruct: 'PlayResponse',
+        protobuf_file: __webpack_require__(/*! ../proto/columns.proto */ "./koaless/workspace/play/source/proto/columns.proto"),
+        request_struct: 'PlayRequest',
+        response_struct: 'PlayResponse',
         before: data => data,
         then: ({column}) => column,
         catch: err => {

@@ -1,10 +1,10 @@
 const net = require('net');
 
 class RPC {
-    constructor({encode, decode, isReceiveComplete}) {
+    constructor({encode, decode, is_receive_complete}) {
         this.encode = encode;
         this.decode = decode;
-        this.isReceiveComplete = isReceiveComplete;
+        this.is_receive_complete = is_receive_complete;
     }
 
     createServer(callback) {
@@ -15,7 +15,7 @@ class RPC {
             socket.on('data', data => {
                 buffer = (buffer && buffer.length) ? Buffer.concat([buffer, data]) : data;
 
-                while ((buffer && buffer.length) && (package_length = this.isReceiveComplete(buffer))) {
+                while ((buffer && buffer.length) && (package_length = this.is_receive_complete(buffer))) {
                     if (buffer.length === package_length) {
                         request_buffer = buffer;
                         buffer = null;

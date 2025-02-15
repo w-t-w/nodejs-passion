@@ -6,7 +6,7 @@
 // const PACKAGE_HEADER_LENGTH = 4,
 //     PACKAGE_BODY_LENGTH = 4;
 //
-// const lessonIds = [
+// const lesson_ids = [
 //         '136797',
 //         '136798',
 //         '136799',
@@ -27,7 +27,7 @@
 //         '146569',
 //         '146582'
 //     ],
-//     lessonIds_length = lessonIds.length;
+//     lesson_ids_length = lesson_ids.length;
 //
 // let index = 0,
 //     id = null,
@@ -61,14 +61,14 @@
 // };
 //
 // // setInterval(() => {
-// //     index = Math.floor(Math.random() * lessonIds_length);
-// //     id = lessonIds[index];
+// //     index = Math.floor(Math.random() * lesson_ids_length);
+// //     id = lesson_ids[index];
 // //     socket.write(encode(id));
 // // }, 50);
 //
 // for (let i = 0; i < 200; i++) {
-//     index = Math.floor(Math.random() * lessonIds_length);
-//     id = lessonIds[index];
+//     index = Math.floor(Math.random() * lesson_ids_length);
+//     id = lesson_ids[index];
 //     socket.write(encode(id));
 // }
 //

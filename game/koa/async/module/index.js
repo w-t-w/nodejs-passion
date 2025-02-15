@@ -15,9 +15,9 @@ let player_won_count = 0,
     player_same_count = 0,
     last_player_action = null;
 
-const gameKoa = new Koa();
+const game_koa = new Koa();
 
-gameKoa.use(async (ctx, next) => {
+game_koa.use(async (ctx, next) => {
     const {request, response} = ctx;
     const {query} = request;
 
@@ -46,7 +46,7 @@ gameKoa.use(async (ctx, next) => {
     if (ctx.player_won) player_won_count++;
 });
 
-gameKoa.use(async ctx => {
+game_koa.use(async ctx => {
     const {request, response} = ctx;
     const {query} = request;
     const {action} = query;
@@ -65,4 +65,4 @@ gameKoa.use(async ctx => {
     });
 });
 
-module.exports = gameKoa;
+module.exports = game_koa;

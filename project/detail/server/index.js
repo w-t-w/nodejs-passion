@@ -11,8 +11,8 @@ const PROTO_DIR = path.resolve(process.cwd(), './project/detail/proto/columns.pr
 const schema = protobuf(fs.readFileSync(PROTO_DIR, 'utf-8'), 'utf-8');
 
 const tcp_server = rpc({
-    requestSchema: schema.ColumnRequest,
-    responseSchema: schema.ColumnResponse
+    request_schema: schema.ColumnRequest,
+    response_schema: schema.ColumnResponse
 });
 
 const server = tcp_server.createServer((request, response) => {

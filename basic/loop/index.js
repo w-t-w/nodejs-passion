@@ -1,7 +1,7 @@
 // const loop = {
 //     queue: [],
-//     timeoutQueue: [],
-//     eventsQueue: [],
+//     timeout_queue: [],
+//     events_queue: [],
 //     init() {
 //         while (this.queue.length) {
 //             const callback = this.queue.shift();
