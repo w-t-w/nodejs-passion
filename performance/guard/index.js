@@ -7,14 +7,13 @@
 //     // for (let i = 0; i < 1; i++) {
 //     let heart_result = heart(cluster);
 //     // }
-//     // 主进程检测子进程异常或者心跳检测: 僵尸子进程监控 exit 退出,即时重启
-//     // todo: 延时重启
+//     // 主进程检测子进程异常或者心跳检测: 僵尸子进程监控 exit 退出,即时重启与延时重启都已热情的实现与完成
 //     cluster.on('exit', () => {
-//         // const timer_exit = setTimeout(() => {
 //         if (heart_result.timer) clearInterval(heart_result.timer);
-//         heart_result = heart(cluster);
-//         // clearTimeout(timer_exit);
-//         // }, 666);
+//         const timer_exit = setTimeout(() => {
+//             heart_result = heart(cluster);
+//             clearTimeout(timer_exit);
+//         }, 666);
 //     });
 // } else {
 //     // 子进程异常捕获机制
@@ -40,4 +39,4 @@
 //     require('./src');
 // }
 
-console.log('NodeJS 《第二十八课: 性能优化 - 进程的守护与管理》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第三十二课: 性能优化 - 进程的守护与管理: 心跳检测 - 僵尸子进程监控延时重启优化》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
