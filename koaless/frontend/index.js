@@ -19,6 +19,7 @@
 //
 //                 const DATA_DIR = path.resolve(BUSINESS_DIR, business_name, 'config/index.js');
 //                 const TEMPLATE_DIR = path.resolve(BUSINESS_DIR, business_name, 'template/index.tpl');
+//                 const STATIC_DIR = path.resolve(BUSINESS_DIR, business_name, 'source');
 //
 //                 const data = await new Promise((resolve, reject) => {
 //                     fs.readFile(DATA_DIR, 'utf-8', (err, data) => {
@@ -35,6 +36,7 @@
 //                 return {
 //                     [`/${business_name}`]: {
 //                         data,
+//                         static: STATIC_DIR,
 //                         template: {
 //                             template_name: TEMPLATE_DIR,
 //                             template_string,
@@ -51,5 +53,6 @@
 //     });
 // })();
 
-console.log('NodeJS 《第二十九课: koaless 云函数》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
-console.log('NodeJS 《第三十四课: koaless 云函数业务上传与与客户端运行批处理优化》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+// console.log('NodeJS 《第二十九课: koaless 云函数》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+// console.log('NodeJS 《第三十三课: koaless 云函数业务上传与与客户端运行批处理优化》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');
+console.log('NodeJS 《第三十四课: koaless 云函数 factory requesters 默认协议配置以及静态资源上传批处理完善优化》部分已热情的学习研究完毕!如需重试,将以上代码注释解开即可!');

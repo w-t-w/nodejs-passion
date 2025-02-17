@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 const requester_source = {};
 
 function factory(config) {
@@ -28,7 +31,12 @@ function factory(config) {
 }
 
 factory.createRequester = (name, requester) => {
-    requester_source[name] = requester;
+    const REQUESTER_DEFAULT_DIR = path.resolve(__dirname, './requesters/default-config', name, 'index.js');
+    if (fs.existsSync(REQUESTER_DEFAULT_DIR)) {
+        requester_source[name] = require('./requesters')[name];
+    } else {
+        requester_source[name] = requester;
+    }
 };
 
 module.exports = factory;

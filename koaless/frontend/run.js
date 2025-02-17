@@ -1,18 +1,24 @@
 const Koa = require('koa');
 const KoaMount = require('koa-mount');
+const KoaStatic = require('koa-static');
 const factory = require('./factory');
 const template_create = require('./template');
-const requesters = require('./requesters');
 
 const PORT = 3000;
 
-factory.createRequester('rpc', requesters.rpc);
-factory.createRequester('http', requesters.http);
+factory.createRequester('rpc');
+factory.createRequester('http');
 
 const run = (config_source) => {
     const koa = new Koa();
 
-    Object.entries(config_source).forEach(([pathname, {data: data_config, template: template_config}]) => {
+    Object.entries(config_source).forEach(([pathname, {
+        data: data_config,
+        static: static_config,
+        template: template_config
+    }]) => {
+        koa.use(KoaStatic(static_config));
+
         koa.use(async (ctx, next) => {
             const {request, response} = ctx;
 

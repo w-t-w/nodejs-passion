@@ -4,6 +4,7 @@ const fs = require('fs');
 const webpack = require('webpack');
 const glob = require('glob');
 const memory_fs = require('memory-fs');
+const copy_dir = require('copy-dir');
 
 const uploader = async () => {
     const REGEXP_MATCH_NAME = /workspace\/(.+)\/source/;
@@ -17,20 +18,26 @@ const uploader = async () => {
             const workspace_base_dir = WORKSPACE_TRANSFORM[0];
             const workspace_name = WORKSPACE_TRANSFORM[1];
             const MAIN_DIR = path.resolve(SOURCE_DIR, workspace_name);
+            const WORKSPACE_SOURCE_DIR = path.resolve(process.cwd(), 'koaless', workspace_base_dir);
 
-            const WORKSPACE_TEMPLATE_DIR = path.resolve(process.cwd(), 'koaless', workspace_base_dir, 'template/index.html');
+            const WORKSPACE_TEMPLATE_DIR = path.resolve(WORKSPACE_SOURCE_DIR, 'template/index.html');
             const TEMPLATE_DIR = path.resolve(MAIN_DIR, './template');
 
-            const WORKSPACE_CONFIG_DIR = path.resolve(process.cwd(), 'koaless', workspace_base_dir, 'config/index.js');
+            const WORKSPACE_CONFIG_DIR = path.resolve(WORKSPACE_SOURCE_DIR, 'config/index.js');
             const CONFIG_DIR = path.resolve(MAIN_DIR, './config');
+
+            const WORKSPACE_STATIC_DIR = path.resolve(WORKSPACE_SOURCE_DIR, 'static');
+            const STATIC_DIR = path.resolve(MAIN_DIR, './source/static');
 
             mkdirp.sync(MAIN_DIR);
             mkdirp.sync(TEMPLATE_DIR);
             mkdirp.sync(CONFIG_DIR);
+            mkdirp.sync(STATIC_DIR);
             // if (!fs.existsSync(TEMPLATE_DIR)) fs.mkdirSync(TEMPLATE_DIR);
             // if (!fs.existsSync(CONFIG_DIR)) fs.mkdirSync(CONFIG_DIR);
 
             fs.createReadStream(WORKSPACE_TEMPLATE_DIR, 'utf-8').pipe(fs.createWriteStream(`${TEMPLATE_DIR}/index.tpl`, 'utf-8'));
+            copy_dir.sync(WORKSPACE_STATIC_DIR, STATIC_DIR);
 
             const compiler = webpack({
                 mode: 'development',
